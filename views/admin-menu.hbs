@@ -1,0 +1,68 @@
+<div class="row">
+	<div class="col-md-12">
+		<h1>Admin Menu Page</h1>
+		<div class="jumbotron">
+			<button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg" id="menu">Add/Edit Menu</button>
+			<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+				<div class="modal-dialog modal-lg" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+							<div class="container">
+								<h1 class="modal-title" id="myModalLabel">
+									<span class="glyphicon glyphicon-th-list"></span> Create or Update your menu</h1>
+								<h4>On this page you can create and update your menu by entering<br> your item, description, price, and category</h4>
+							</div>
+							<div class="modal-body">
+								<div class="row">
+									<span class="applist"></span>
+									<div class="col-large-12">
+										<div class="panel panel-default">
+											<div class="panel-heading">
+												<h3 class="panel-title"><strong>Plates</strong></h3>
+											</div>
+											<div class="panel-body">
+												<form id="app" type="POST" role="form">
+													<div class="form-group">
+														<label for="Apetizer">Enter a new Plate here:</label>
+														<input type="text" class="form-control" id="apetizer">
+													</div>
+													<div class="form-group">
+														<label for="appDesc">Description:</label>
+														<input type="text" class="form-control" id="appDesc">
+													</div>
+													<div class="form-group">
+														<label for="appPrice">Price:</label>
+														<input type="text" class="form-control" id="appPrice">
+													</div>
+													<div class="form-group">
+														<label for="category">Select Category:</label>
+														<select class="form-control" id="category">
+                                                    <option value="Appetizer">Appetizer</option>
+                                                    <option value="Steak">Steak</option>
+                                                    <option value="Chicken">Chicken</option>
+                                                    <option value="Seafood">Seafood</option>
+                                                    <option value="Dessert">Dessert</option>
+                                                    <option value="Hamburger">Hamburger</option>
+                                                </select>
+													</div>
+													<br>
+													<br>
+													<button type="submit" class="btn btn-success submit" id="appetizer_btn">Add Item</button>
+												</form>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+								<button type="button" class="btn btn-primary" id="save">Save changes</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Contact</title>
+	<!-- Materialize CSS Reference -->
+	<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">-->
+	<!-- Bootstrap: Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+		crossorigin="anonymous">
+</head>
+
+<body>
+	<script type="text/x-handlebars-template" id="test">
+
+	<div class="container">
+		<div class="row">
+			<div class="page-header">
+				<h1>Res.Req <small>Welcome!</small></h1>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-12">
+
+				<ul class="nav nav-pills nav-justified">
+					<li role="presentation"><a href="./index.html">Home</a></li>
+					<li role="presentation"><a href="./menu.html">Menu</a></li>
+					<li role="presentation"><a href="./reserve.html">Reservation</a></li>
+					<li role="presentation"><a href="./events.html">Events</a></li>
+					<li role="presentation"><a href="./reviews.html">Reviews</a></li>
+					<li role="presentation" class="active"><a href="./contact.html">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+		
+
+		<div class="row">
+	<div class="col-md-12">
+		<h1>Contact Page</h1>
+		<div class="jumbotron">
+
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title">Contact Information</h3>
+				</div>
+				<div class="panel-body">
+					<p>Contact Information Display</p>
+				</div>
+				
+				{{#each contacts}}
+				<ul class="list-group">
+					<li class="list-group-item">Name: {{name}}</li>
+					<li class="list-group-item">Address: {{address}}</li>
+					<li class="list-group-item">Phone: {{phone}}</li>
+					<li class="list-group-item">Hours: {{hour}}</li>
+					<li class="list-group-item">Email: {{email}}</li>
+				</ul>
+				{{/each}}
+			</div>
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title">Contact Information</h3>
+				</div>
+				<div class="panel-body">
+					<p>Add your contact information below.</p>
+				</div>
+				<ul class="list-group">
+					<li class="list-group-item">
+						<div class="form-group">
+							<label for="name">Name</label>
+							<input class="form-control" id="name" placeholder="Restaurant Name">
+						</div>
+					</li>
+					<li class="list-group-item">
+						<div class="form-group">
+							<label for="address">Address</label>
+							<input class="form-control" id="address" placeholder="Restaurant Address">
+						</div>
+					</li>
+					<li class="list-group-item">
+						<div class="form-group">
+							<label for="phone">Phone</label>
+							<input class="form-control" id="phone" placeholder="Restaurant Phone">
+						</div>
+					</li>
+					<li class="list-group-item">
+						<div class="form-group">
+							<label for="hours">Hours</label>
+							<input class="form-control" id="hours" placeholder="Restaurant Hours">
+						</div>
+					</li>
+					<li class="list-group-item">
+						<div class="form-group">
+							<label for="email">Email </label>
+							<input type="email" class="form-control" id="email" placeholder="Email">
+						</div>
+					</li>
+					<li class="list-group-item text-center"> <button type="submit" id="submit" class="btn btn-default">Submit</button></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+	</div>
+	</script>
+	<nav class="navbar navbar-default navbar-fixed-bottom">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<footer>
+						<h5>Res.Req Inc.</h5>
+						<p>Contact information: <a href="mailto:someone@example.com">
+  res@req.com</a>.</p>
+					</footer>
+				</div>
+			</div>
+		</div>
+	</nav>
+
+
+
+	<!-- jQuery Reference -->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<!-- Javascript Reference -->
+	<script src='../js/contact.js'></script>
+	<!--Materialize-->
+	<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>-->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.js"></script>
+	<!-- Bootstrap: Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+		crossorigin="anonymous"></script>
+</body>
+
+</html>

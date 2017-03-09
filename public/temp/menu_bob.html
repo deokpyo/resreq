@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Menu Input</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="">
+            <h1> <span class = "glyphicon glyphicon-th-list"></span> Create or Update your menu</h1>
+            <h4>On this page you can create and update your menu by entering your item, description, and price</h4>
+        </div>
+        <div class="row">
+            <div class="col-large-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title"><strong>Appetizers</strong></h3>
+                    </div>
+                    <div class="panel-body">
+                        <form type="POST" role="form">
+                            <div class="form-group">
+                                <label for="Apetizer">Enter a new Apetizer here</label>
+                                <input type="text" class="form-control" id="apetizer">
+                            </div>
+                            <div class="form-group">
+                                <label for="appDesc">Appetizer description</label>
+                                <input type="text" class="form-control" id="appDesc">
+                            </div>
+                            <div class="form-group">
+                                <label for="appPrice">Price</label>
+                                <input type="text" class="form-control" id="appPrice">
+                                 </div>
+                            
+                            <button type="submit" class="btn btn-success submit" id ="appetizer_btn">Add Item</button>
+                        </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title"><strong>Entre</strong></h3>
+                        </div>
+                        <div class="panel-body">
+                            <form type="POST" role="form">
+                                <div class="form-group">
+                                    <label for="entre">Enter Entre item name</label>
+                                    <input type="text" class="form-control" id="entre">
+                                </div>
+                                 <div class="form-group">
+                                        <label for="desDesc">Entre description</label>
+                                        <input type="text" class="form-control" id="desDesc">
+                                    </div>
+                                <div class="form-group">
+                                    <label for="entPrice">Price</label>
+                                    <input type="text" class="form-control" id="entPrice">
+                                </div>
+                                 </div>
+                            
+                            <button type="submit" class="btn btn-success submit" id= "entre_btn">Add Item</button>
+                        </div>
+                        </form>
+                        
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title"><strong>Dessert</strong></h3>
+                            </div>
+                            <div class="panel-body">
+                                <form type="POST" role="form">
+                                    <div class="form-group">
+                                        <label for="dessert">Enter Dessert item</label>
+                                        <input type="text" class="form-control" id="dessert">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="desDesc">Dessert description</label>
+                                        <input type="text" class="form-control" id="desDesc">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="desPrice">Price</label>
+                                        <input type="text" class="form-control" id="desPrice">
+                                    </div>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-success submit" id="dessert_btn">Add Item</button>
+                        </div>
+                    </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js "></script>
+    <script type="text/javascript " src="../data/friends.js ">
+    $("#submit").on("click", function() {
+        function validateForm() {
+            var isValid = true;
+            $(".form-control").each(function() {
+                if ($(this).val() === " ") {
+                    isValid = false;
+                }
+            });
+           
+            return isValid;
+        }
+        if (validateForm()) {
+            var userData = {
+                name: $(".name").val(),
+                photo: $(".photo").val(),
+                
+                ]
+            };
+            var currentURL = window.location.origin;
+            $.post(currentURL + "/", userData, function(data) {
+                alert("working");
+            })
+        }
+    })
+    </script>
+</body>
+
+</html>
