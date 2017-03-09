@@ -1,9 +1,9 @@
 {
   "development": {
-    "username": "root",
-    "password": "ejrvy1024",
-    "database": "resreq_db",
-    "host": "127.0.0.1",
+    "username": "ka8r7cs60yheygtl",
+    "password": "w2lk0j4qglw9oyu3",
+    "database": "nxyso203szhfwjwi",
+    "host": "y0nkiij6humroewt.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
     "dialect": "mysql"
   },
   "test": {
