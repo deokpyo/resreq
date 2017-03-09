@@ -9,15 +9,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bdeckard92/resreq.git"
+    "url": "git+https://github.com/dh24732/resreq.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/bdeckard92/resreq/issues"
+    "url": "https://github.com/dh24732/resreq/issues"
   },
-  "homepage": "https://github.com/bdeckard92/resreq#readme",
+  "homepage": "https://github.com/dh24732/resreq#readme",
   "dependencies": {
     "body-parser": "^1.17.1",
     "express": "^4.15.2",
